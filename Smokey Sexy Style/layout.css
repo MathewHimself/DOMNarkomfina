@@ -1,0 +1,169 @@
+/* общие стили для страницы */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul,
+blockquote,
+hr {
+  width: 700px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+p,
+blockquote,
+ol,
+ul {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+img {
+  width: 1024px;
+  margin: 0 auto;
+  display: block;
+}
+h1 + p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+}
+/* h1 + hr + p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+} */
+a {
+  color: inherit;
+}
+h1 {
+  margin: 50px auto;
+  font-size: 38px;
+  line-height: 44px;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  line-height: 36px;
+}
+h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 32px;
+}
+h4 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 28px;
+}
+h5 {
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 24px;
+}
+hr {
+  width: 1024px;
+  margin: 20px auto;
+}
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p {
+  margin-top: 10px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+li {
+  margin: 8px 0;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+
+/* стили для бокового меню */
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+.sidebar:hover {
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.sidebar ol {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+}
+.sidebar ol ol {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sidebar li {
+  line-height: 100%;
+}
+.sidebar a {
+  text-decoration: none;
+}
+
+/* стили для верхнего меню */
+.menubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.menubar img {
+  width: 350px;
+  margin: 0;
+}
+.menubar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease 0.3s;
+}
+.menubar a:hover {
+  color: #000;
+  transition: all ease 0.6s;
+}
